@@ -1,0 +1,98 @@
+/* style.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  
+  nav a:hover {
+    color: #333;
+    transform: translateX(15px);
+  }
+  
+  /* Add sections styles */
+  section {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* style.css */
+
+body {
+    background-image: url(bg.jpg);
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: rgb(16, 71, 134)55, 255, 255);
+    text-align: center;
+    }
+    
+    header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+    }
+    
+    header nav a:hover {
+    color: lightblue;
+    }
+    
+    section h1, h2 {
+    animation: slideInLeft 1s ease-in-out;
+    animation-fill-mode: both;
+    }
+    
+    section p {
+    animation: slideInRight 1s ease-in-out;
+    animation-fill-mode: both;
+    }
+    
+    button {
+    background-color: lightblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    }
+    
+    button:hover {
+    background-color: rgb(21, 128, 128);
+    color: lightblue;
+    }
+    
+    @keyframes slideInLeft {
+    0% {
+    transform: translateX(-100%);
+    }
+    100% {
+    transform: translateX(0);
+    }
+    }
+    
+    @keyframes slideInRight {
+    0% {
+    transform: translateX(100%);
+    }
+    100% {
+    transform: translateX(0);
+    }
+    }
